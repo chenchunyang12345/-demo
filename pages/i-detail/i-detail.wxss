@@ -1,0 +1,95 @@
+.d-dialog {
+  width: 710rpx;
+  padding: 20rpx 20rpx;
+  height: calc(100vh - 100rpx);
+  font-size: 30rpx;
+}
+
+.d-time {
+  width: 100%;
+  text-align: center;
+  font-size: 24rpx;
+  color: #999;
+  margin-bottom: 20rpx;
+}
+
+.d-robot {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 40rpx;
+}
+
+.d-robot > view {
+  padding: 20rpx;
+  max-width: 500rpx;
+  background-color: #6699ff;
+  color: #fff;
+  border-radius: 30rpx;
+  border-bottom-right-radius: 0;
+}
+
+.d-caller {
+  display: flex;
+  margin-bottom: 40rpx;
+}
+
+.d-caller > view:nth-child(1) {
+  width: 80rpx;
+  height: 80rpx;
+  background-color: rgb(51, 123, 254);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-right: 20rpx;
+}
+
+.d-caller > view:nth-child(2) {
+  padding: 20rpx;
+  max-width: 460rpx;
+  background-color: rgb(233, 238, 240);
+  border-radius: 30rpx;
+  border-bottom-left-radius: 0;
+}
+
+.d-bottom {
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1rpx solid #ddd;
+}
+
+.d-bottom > view {
+  padding: 20rpx 40rpx;
+  color: #0A5ABB;
+}
+
+.d-bottom > view:nth-last-child(1) {
+  color: #000;
+}
+
+.d-bottom > view:nth-last-child(2) {
+  color: red;
+}
+
+.d-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.d-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .4);
+}

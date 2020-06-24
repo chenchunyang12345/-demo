@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/i-detail/i-detail",
+    "pages/my/my",
+    "pages/s-manager/s-manager",
+    "pages/s-answer/s-answer",
+    "pages/s-company/s-company",
+    "pages/s-call/s-call",
+    "pages/s-local/s-local",
+    "pages/s-addressBook/s-addressBook",
+    "pages/s-blacklist/s-blacklist",
+    "pages/s-question/s-question",
+    "pages/s-feedback/s-feedback"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0A5ABB",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#0A5ABB",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "接听记录",
+        "iconPath": "/asset/history.png",
+        "selectedIconPath": "/asset/history-active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/asset/my.png",
+        "selectedIconPath": "/asset/my-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-radio": "@vant/weapp/radio/index",
+    "van-radio-group": "@vant/weapp/radio-group/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-switch": "@vant/weapp/switch/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-picker": "@vant/weapp/picker/index",
+    "van-panel": "@vant/weapp/panel/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-datetime-picker": "@vant/weapp/datetime-picker/index",
+    "van-loading": "@vant/weapp/loading/index",
+    "van-image": "@vant/weapp/image/index"
+  }
+}

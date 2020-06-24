@@ -1,0 +1,45 @@
+<!-- 对话流 -->
+<scroll-view scroll-y="true" class="d-dialog">
+  <!-- 时间戳 -->
+  <view class="d-time">
+    2020-32-23 12:23:23
+  </view>
+  <block wx:for="{{detaileList}}" wx:key="index">
+    <block wx:if="{{item.directionType === 'OUT'}}">
+      <!-- 机器人 -->
+      <view class="d-robot">
+        <view>
+          <text>{{item.voiceText}}</text>
+        </view>
+      </view>
+    </block>
+    <block wx:if="{{item.directionType === 'IN'}}">
+      <!-- 来电人 -->
+      <view class="d-caller">
+        <view>陌</view>
+        <view>
+          <text>{{item.voiceText}}</text>
+        </view>
+      </view>
+    </block>
+  </block>
+</scroll-view>
+<!-- 下方按钮 -->
+<view class="d-bottom">
+  <view bind:tap="onPlayRecord">
+    播放录音
+  </view>
+  <view bind:tap="onCallback">
+    回拨
+  </view>
+  <view bind:tap="onDelete">
+    删除记录
+  </view>
+</view>
+
+<!-- 播放语音时的遮罩 -->
+<view hidden="{{ !overlayShow }}" bind:tap="onClickHide" class="d-overlay">
+  <view class="d-wrapper">
+    <van-loading size="150rpx" type="spinner" vertical />
+  </view>
+</view>

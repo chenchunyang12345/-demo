@@ -1,0 +1,20 @@
+.l-operator {
+
+}
+
+.l-group {
+  margin: 40rpx 30rpx;
+}
+
+.l-code {
+  padding: 0;
+}
+
+.l-save {
+  text-align: center;
+  margin-top: 200rpx;
+}
+
+.l-saveButton {
+  padding: 0 100rpx !important;
+}

@@ -1,0 +1,124 @@
+<view class="a-area">
+	<van-panel>
+		<view slot="header">
+			<view class="a-header">
+				<text>开场白设置</text>
+				<van-switch checked="{{ checkedHi }}" bind:change="onHiChange" />
+			</view>
+		</view>
+		<view class="a-hi">
+			您好，我是<text bindtap="changeWords">{{ prologueText }}</text>，请问您打电话过来有什么事吗？
+		</view>
+	</van-panel>
+</view>
+
+<view class="a-area">
+	<van-panel>
+		<view slot="header">
+			<view class="a-header">
+				<text>当前场景自定义</text>
+				<van-switch 
+					checked="{{ checked1 }}" 
+					bind:change="onSwitchChange1" 
+					data-typeId='CALLMN_CSCENE_TYPE' 
+				/>
+			</view>
+		</view>
+		<view>
+			<van-radio-group 
+				value="{{ radio1 }}" 
+				bind:change="onRadioChange1" 
+			>
+				<van-radio name="CALLMN_SCE_MEET" custom-class="a-group">正在开会</van-radio>
+				<van-radio name="CALLMN_SCE_DRICAR" custom-class="a-group">正在开车</van-radio>
+				<van-radio name="CALLMN_SCE_AIR" custom-class="a-group">正在飞行途中</van-radio>
+				<van-radio name="_NA_" custom-class="a-group">默认</van-radio>
+			</van-radio-group>
+		</view>
+		<!-- <view class="a-meeting">
+			<view>
+				<text>开会设置</text>
+			</view>
+			<van-cell-group>
+  			<van-cell title="单元格">
+
+				</van-cell>
+				<van-cell title="单元格">
+					
+				</van-cell>
+			</van-cell-group>
+		</view> -->
+	</van-panel>
+</view>
+
+<view class="a-area">
+	<van-panel>
+		<view slot="header">
+			<view class="a-header">
+				<text>快递来电，你希望AI的回答</text>
+				<van-switch 
+					checked="{{ checked2 }}" 
+					bind:change="onSwitchChange2" 
+					data-typeId='CALLMN_EXPRESS_TYPE' 
+				/>
+			</view>
+		</view>
+		<view>
+			<van-radio-group 
+				value="{{ radio2 }}" 
+				bind:change="onRadioChange2" 
+			>
+				<van-radio name="CALLMN_EXP_DSD" custom-class="a-group">代收点</van-radio>
+				<van-radio name="CALLMN_WM_QT" custom-class="a-group">前台</van-radio>
+				<van-radio name="CALLMN_WM_WDPS" custom-class="a-group">晚点配送</van-radio>
+				<van-radio name="CALLMN_WM_CNYZ" custom-class="a-group">菜鸟驿站</van-radio>
+				<van-radio name="CALLMN_WM_FCG" custom-class="a-group">蜂巢柜</van-radio>
+				<van-radio name="_NA_" custom-class="a-group">默认</van-radio>
+			</van-radio-group>
+		</view>
+	</van-panel>
+</view>
+
+<view class="a-area">
+	<van-panel>
+		<view slot="header">
+			<view class="a-header">
+				<text>快递来电，你希望AI的回答</text>
+				<van-switch 
+					checked="{{ checked3 }}" 
+					bind:change="onSwitchChange3" 
+					data-typeId="CALLMN_WAIMAI_TYPE"
+				/>
+			</view>
+		</view>
+		<view>
+			<van-radio-group 
+				value="{{ radio3 }}" 
+				bind:change="onRadioChange3"
+			>
+				<van-radio name="CALLMN_WM_DOOR" custom-class="a-group">放在门口</van-radio>
+				<van-radio name="CALLMN_WM_GET" custom-class="a-group">马上取</van-radio>
+				<van-radio name="CALLMN_WM_CALLBK" custom-class="a-group">马上回拨</van-radio>
+				<van-radio name="_NA_" custom-class="a-group">默认</van-radio>
+			</van-radio-group>
+		</view>
+	</van-panel>
+</view>
+
+<!-- 提示弹窗 -->
+<van-dialog
+  use-slot
+  title="修改话术"
+  show="{{ dialogShow }}"
+  show-cancel-button
+	close-on-click-overlay="true"
+	confirm-button-text="修改"
+  bind:close="onDialogClose"
+	bind:confirm="onDialogConfirm"
+>
+  <van-field
+    value="{{ dialogText }}"
+    placeholder="请输入修改的话术"
+    bind:change="onInputChange"
+  />
+</van-dialog>

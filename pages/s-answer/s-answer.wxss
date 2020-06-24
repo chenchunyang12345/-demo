@@ -1,0 +1,28 @@
+.a-area {
+  padding: 20rpx 20rpx;
+}
+
+.a-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx 0 10rpx;
+}
+
+.a-hi {
+  padding: 0 0 20rpx;
+}
+
+.a-hi text {
+  padding: 0 10rpx;
+  border: 1px solid #ccc;
+}
+
+.a-group {
+  padding: 20rpx;
+}
+
+.a-meeting > view {
+  text-align: center;
+  padding: 10rpx 0;
+}

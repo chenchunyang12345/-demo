@@ -1,0 +1,21 @@
+<van-search 
+  value="{{ value }}" 
+  placeholder="搜索手机号" 
+  bind:search="onSearch"
+/>
+
+<view class="i-phonelist">
+  <block wx:for="{{ historyList }}" wx:key="index">
+    <view 
+      class="i-item" 
+      bind:tap="toDetail" 
+      data-callId="{{item.callId}}"
+      data-phoneNumber="{{item.fromNumber}}"
+      data-recordPath="{{item.recordPath}}"
+    >
+      <view>陌</view>
+      <text>{{item.fromNumber}}（{{item.callLabel}}）</text>
+      <text>{{item.fromDate}}</text>
+    </view>
+  </block>
+</view>

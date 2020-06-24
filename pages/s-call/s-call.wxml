@@ -1,0 +1,43 @@
+<view class="c-info">
+  <van-icon name="phone-o" size="30" />
+  <view>
+    <text>手机号码:{{nowConfig.mobilePhone}}</text>
+    <text>号码运营商:{{nowConfig.operatorId}}</text>
+  </view>
+  <!-- <view>
+    <van-button type="info" bind:click="onChangeNumber">
+      切换手机号
+    </van-button>
+  </view> -->
+</view>
+
+<view>
+  <van-cell-group>
+    <van-cell center title="无条件呼叫转移" label="所有来电不响铃，直接转移至助理接听">
+      <van-switch checked="{{ checked1 }}" bind:change="onChange" data-id='1' />
+    </van-cell>
+    <van-cell center title="遇忙呼叫转移" label="占线、来电挂断时助理应答">
+      <van-switch checked="{{ checked2 }}" bind:change="onChange" data-id='2' />
+    </van-cell>
+    <van-cell center title="无应答转移" label="来电无人接听时助理应答">
+      <van-switch checked="{{ checked3 }}" bind:change="onChange" data-id='3' />
+    </van-cell>
+    <van-cell center title="呼叫不可达转移" label="关机、飞行模式和无信号时助理应答">
+      <van-switch checked="{{ checked4 }}" bind:change="onChange" data-id='4' />
+    </van-cell>
+  </van-cell-group>
+</view>
+
+<!-- 弹出层 -->
+<van-popup 
+  show="{{ show }}" 
+  position="bottom"
+>
+  <van-picker 
+  show-toolbar
+  title="选择要配置的手机号"
+  columns="{{ columns }}" 
+  bind:cancel="onPickerCancel"
+  bind:confirm="onPickerConfirm"
+  />
+</van-popup>

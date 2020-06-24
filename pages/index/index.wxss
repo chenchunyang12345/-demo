@@ -1,0 +1,37 @@
+.i-phonelist {
+  padding: 20rpx 25rpx;
+}
+
+.i-item {
+  display: flex;
+  align-items: center;
+  border-top: 1rpx solid #ddd;
+  padding: 20rpx 0;
+}
+
+.i-item:nth-last-child(1) {
+  border-bottom: 1rpx solid #ddd;
+}
+
+.i-item > view {
+  width: 100rpx;
+  height: 100rpx;
+  background-color: rgb(24, 113, 248);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-right: 20rpx;
+}
+
+.i-item > text:nth-child(1) {
+  font-size: 24rpx;
+}
+
+.i-item > text:nth-last-child(1) {
+  font-size: 22rpx;
+  color: #999;
+  flex: 1;
+  text-align: right;
+}

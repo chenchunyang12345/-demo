@@ -1,0 +1,122 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useIsolateContext": true,
+		"useCompilerModule": false,
+		"userConfirmedUseCompilerModuleSwitch": false,
+		"compileHotReLoad": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.10.3",
+	"appid": "wxdaf0b92219ce0de9",
+	"projectname": "%E6%8E%A5%E5%90%AC%E5%AE%9Ddemo",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/my/my",
+					"pathName": "pages/my/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/s-local/s-local",
+					"pathName": "pages/s-local/s-local",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/s-call/s-call",
+					"pathName": "pages/s-call/s-call",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/s-answer/s-answer",
+					"pathName": "pages/s-answer/s-answer",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/s-manager/s-manager",
+					"pathName": "pages/s-manager/s-manager",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/i-detail/i-detail",
+					"pathName": "pages/i-detail/i-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "pages/i-detail/i-detail",
+					"pathName": "pages/i-detail/i-detail",
+					"query": "callId= 11298",
+					"scene": null
+				}
+			]
+		}
+	}
+}

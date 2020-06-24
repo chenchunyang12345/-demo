@@ -1,0 +1,83 @@
+.m-sv {
+  width: 100%;
+  height: 160rpx;
+}
+.m-voiceItem {
+  
+}
+
+.m-voiceItem > view {
+  width: 90%;
+  height: 100%;
+  background-color: rgb(137, 175, 240);
+  border-radius: 20rpx;
+  margin-left: 20rpx;
+}
+
+.m-labelWrap {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.m-custom {
+  width: 100%;
+  height: 100%;
+  padding: 0 20rpx;
+}
+
+.van-radio__icon--round {
+  background-color: #fff;
+}
+
+.m-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.m-text text {
+  color: #fff;
+}
+
+.m-text text:nth-child(2) {
+  font-size: 22rpx;
+}
+
+.m-content > view {
+  margin-left: 20rpx;
+  padding: 30rpx 0;
+  color: #999;
+}
+
+.m-radioItem {
+  padding: 0 20rpx;
+  height: 50rpx;
+  margin-bottom: 40rpx;
+}
+
+.m-container {
+  display: flex;
+  align-items: center;
+}
+
+.m-container > text {
+  margin-right: 50rpx;
+}
+
+.m-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.m-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

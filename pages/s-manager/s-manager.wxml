@@ -1,0 +1,55 @@
+<view>
+  <van-radio-group value="{{ radio1 }}" bind:change="onVoiceChange">
+    <swiper class="m-sv" next-margin="80rpx" current="{{ current }}">
+        <block wx:for="{{ voiceList }}" wx:key="index">
+          <swiper-item class="m-voiceItem">
+            <view>
+              <van-radio 
+                name="{{item.voiceStyleId}}" 
+                label-class='m-labelWrap' 
+                custom-class='m-custom'
+                label-disabled
+              >
+                <van-image
+                  round
+                  width="100rpx"
+                  height="100rpx"
+                  src="{{item.headImg}}"
+                />
+                <view class="m-text">
+                  <text>{{item.voiceStyleName}}</text>
+                  <text>声音仅对未配音语句有效</text>
+                </view>
+                <van-button round type="default" size="small" bind:click="onListenVoice" data-index='{{index}}'>试听</van-button>
+              </van-radio>
+            </view>
+          </swiper-item>
+        </block>
+    </swiper>
+  </van-radio-group>
+</view>
+
+<view class="m-content">
+  <view>
+    <text>我的助理</text>
+  </view>
+  <van-radio-group value="{{ radio2 }}" bind:change="onChange">
+    <block wx:for="{{identityList}}" wx:key="index">
+      <view class="m-radioItem">
+        <van-radio name="{{item.identityId}}" label-disabled>
+          <view class="m-container">
+            <text>{{item.identityName}}</text>
+            <van-button type="default" size="small" bind:click="onListen" data-index='{{index}}'>试听</van-button>
+          </view>
+        </van-radio>
+      </view>
+    </block>
+  </van-radio-group>
+</view>
+
+<!-- 播放语音时的遮罩 -->
+<view hidden="{{ !overlayShow }}" bind:tap="onClickHide" class="m-overlay">
+  <view class="m-wrapper">
+    <van-loading size="150rpx" type="spinner" vertical />
+  </view>
+</view>
