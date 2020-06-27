@@ -1,5 +1,5 @@
 // 请求的base地址
-const BASE_URL = 'http://vcom.club/paas/control/RESTService';
+const BASE_URL = 'https://vcom.club/paas/control/RESTService';
 
 // 定义请求方法
 function request(method, url, data, header = { 'Content-Type': 'application/json' }) {
@@ -20,6 +20,10 @@ function request(method, url, data, header = { 'Content-Type': 'application/json
         resolve(res.data);
       },
       fail: err => {
+        wx.showToast({
+          title: '操作失败',
+          icon: 'none',
+        })
         reject(err);
       }
     })

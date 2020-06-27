@@ -6,6 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    startTime: '',
     callId: '',
     detaileList: [],
     phoneNumber: '',
@@ -69,6 +70,7 @@ Page({
       .then(data => {
         console.log(data)
         this.setData({
+          startTime: data.list[0].createdStamp.slice(0, data.list[0].createdStamp.length - 4),
           detaileList: data.list,
           callId,
           phoneNumber,

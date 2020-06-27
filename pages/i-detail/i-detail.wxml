@@ -2,7 +2,7 @@
 <scroll-view scroll-y="true" class="d-dialog">
   <!-- 时间戳 -->
   <view class="d-time">
-    2020-32-23 12:23:23
+   {{ startTime }}
   </view>
   <block wx:for="{{detaileList}}" wx:key="index">
     <block wx:if="{{item.directionType === 'OUT'}}">
